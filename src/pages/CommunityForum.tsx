@@ -109,6 +109,7 @@ export default function CommunityForum() {
               value={filterCategory} 
               onChange={(e) => setFilterCategory(e.target.value)}
               className="filter-select"
+              aria-label="Filter posts by category"
             >
               {categories.map(cat => (
                 <option key={cat} value={cat}>
@@ -121,6 +122,7 @@ export default function CommunityForum() {
               value={sortBy} 
               onChange={(e) => setSortBy(e.target.value)}
               className="filter-select"
+              aria-label="Sort posts by"
             >
               <option value="recent">Most Recent</option>
               <option value="popular">Most Viewed</option>
