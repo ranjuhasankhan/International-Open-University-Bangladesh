@@ -1,0 +1,142 @@
+.about {
+  width: 100%;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #1e4d80 0%, #2c5aa0 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-top: 130px;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.about-section {
+  margin-bottom: 3rem;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: #1a3a52;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #ff6b35;
+  padding-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.value-card {
+  background: linear-gradient(135deg, rgba(30, 77, 128, 0.05) 0%, rgba(255, 107, 53, 0.05) 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #ff6b35;
+}
+
+.value-card h4 {
+  color: #1e4d80;
+  margin-bottom: 0.5rem;
+}
+
+.value-card p {
+  color: #7f8c8d;
+  margin: 0;
+}
+
+.achievements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.achievement-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.achievement-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff6b35;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-item p {
+  color: #1a3a52;
+  font-weight: 600;
+  margin: 0;
+}
+
+.leadership {
+  margin-top: 2rem;
+}
+
+.leader-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  border: 2px solid #ff6b35;
+  text-align: center;
+}
+
+.leader-card h4 {
+  font-size: 1.5rem;
+  color: #1e4d80;
+  margin-bottom: 0.5rem;
+}
+
+.position {
+  color: #ff6b35;
+  font-weight: 600;
+  margin-bottom: 1rem !important;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    padding: 2rem 1rem;
+    margin-top: 80px;
+  }
+
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-container {
+    padding: 2rem 1rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+}

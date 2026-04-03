@@ -1,0 +1,129 @@
+.faculties {
+  width: 100%;
+}
+
+.faculties-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.faculties-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.faculty-detail-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ecf0f1;
+  transition: all 0.3s ease;
+}
+
+.faculty-detail-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  border-color: #ff6b35;
+}
+
+.faculty-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.faculty-icon {
+  font-size: 2.5rem;
+}
+
+.faculty-detail-card h2 {
+  font-size: 1.3rem;
+  color: #1a3a52;
+  margin: 0;
+}
+
+.faculty-description {
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.programs-section {
+  border-top: 2px solid #ff6b35;
+  padding-top: 1rem;
+}
+
+.programs-section h4 {
+  color: #1e4d80;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.programs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+.programs-list li {
+  color: #555;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.programs-list li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #ff6b35;
+  font-weight: bold;
+}
+
+.admission-cta {
+  background: linear-gradient(135deg, #1e4d80 0%, #ff6b35 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 100%;
+}
+
+.admission-cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.admission-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .faculties-list {
+    grid-template-columns: 1fr;
+  }
+
+  .faculty-detail-card {
+    padding: 1.5rem;
+  }
+
+  .faculty-header {
+    margin-bottom: 1rem;
+  }
+
+  .faculty-detail-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .admission-cta h2 {
+    font-size: 1.5rem;
+  }
+}

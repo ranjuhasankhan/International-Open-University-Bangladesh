@@ -1,0 +1,445 @@
+.fees-scholarships {
+  min-height: calc(100vh - 200px);
+  padding: 0;
+}
+
+.page-header {
+  background: linear-gradient(135deg, #1e4d80 0%, #2c5578 100%);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.fees-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 60px 20px;
+}
+
+/* Fee Structure Section */
+.fee-structure {
+  margin-bottom: 80px;
+}
+
+.fee-structure h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1e4d80;
+  margin-bottom: 40px;
+}
+
+.fees-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.fee-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(30, 77, 128, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.fee-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(30, 77, 128, 0.2);
+}
+
+.fee-card h3 {
+  color: #1e4d80;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.fee-amount {
+  font-size: 2.5rem;
+  color: #ff6b35;
+  font-weight: 700;
+  margin: 20px 0;
+  font-family: 'Courier New', monospace;
+}
+
+.fee-includes {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin: 25px 0;
+}
+
+.fee-includes li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.fee-includes li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #ff6b35;
+  font-weight: bold;
+}
+
+.fee-card .btn {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Scholarships Section */
+.scholarships {
+  margin-bottom: 80px;
+  background: #f8f9fa;
+  padding: 50px;
+  border-radius: 12px;
+}
+
+.scholarships h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1e4d80;
+  margin-bottom: 15px;
+}
+
+.scholarships > p {
+  text-align: center;
+  color: #666;
+  font-size: 1.05rem;
+  margin-bottom: 40px;
+}
+
+.scholarships-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.scholarship-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  border-left: 5px solid #ff6b35;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.scholarship-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.scholarship-card h3 {
+  color: #1e4d80;
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+}
+
+.amount {
+  color: #ff6b35;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin: 10px 0 15px 0 !important;
+}
+
+.scholarship-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+.scholarship-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+.scholarship-card li {
+  padding: 6px 0 6px 20px;
+  position: relative;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.scholarship-card li:before {
+  content: '•';
+  position: absolute;
+  left: 5px;
+  color: #ff6b35;
+  font-weight: bold;
+}
+
+/* Payment Options */
+.payment-options {
+  margin-bottom: 80px;
+}
+
+.payment-options h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1e4d80;
+  margin-bottom: 40px;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.option {
+  background: linear-gradient(135deg, #1e4d80 0%, #2c5578 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.option h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+}
+
+.option p {
+  margin: 0;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+/* Scholarship Application Steps */
+.scholarship-application {
+  margin-bottom: 80px;
+}
+
+.scholarship-application h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1e4d80;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.step {
+  background: white;
+  border: 2px solid #ff6b35;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  position: relative;
+}
+
+.step-number {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background: #ff6b35;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.step h4 {
+  color: #1e4d80;
+  margin: 15px 0 10px 0;
+  font-size: 1.1rem;
+}
+
+.step p {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Scholarship Contact Section */
+.scholarship-contact {
+  text-align: center;
+  background: linear-gradient(135deg, #1e4d80 0%, #2c5578 100%);
+  color: white;
+  padding: 50px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.scholarship-contact h2 {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.scholarship-contact p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+
+.scholarship-contact .btn {
+  background: #ff6b35;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.scholarship-contact .btn:hover {
+  background: #e85a1f;
+  transform: scale(1.05);
+}
+
+/* Button Styles */
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #ff6b35;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #e85a1f;
+  transform: scale(1.02);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .page-header p {
+    font-size: 1rem;
+  }
+
+  .fee-structure h2,
+  .scholarships h2,
+  .payment-options h2,
+  .scholarship-application h2,
+  .scholarship-contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .fees-grid,
+  .scholarships-grid,
+  .options-grid,
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .scholarships,
+  .scholarship-contact,
+  .scholarship-application {
+    padding: 30px 20px;
+  }
+
+  .fee-card,
+  .scholarship-card,
+  .step {
+    padding: 20px;
+  }
+
+  .fee-amount {
+    font-size: 2rem;
+  }
+
+  .step-number {
+    top: -12px;
+    width: 26px;
+    height: 26px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header {
+    padding: 40px 15px;
+    margin-bottom: 40px;
+  }
+
+  .page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .fees-container {
+    padding: 0 15px 40px 15px;
+  }
+
+  .fee-structure h2,
+  .scholarships h2,
+  .payment-options h2,
+  .scholarship-application h2,
+  .scholarship-contact h2 {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+  }
+
+  .fee-amount {
+    font-size: 1.8rem;
+  }
+
+  .fee-includes li,
+  .scholarship-card li {
+    padding-left: 20px;
+    font-size: 0.85rem;
+  }
+
+  .scholarship-contact {
+    padding: 30px 15px;
+  }
+}

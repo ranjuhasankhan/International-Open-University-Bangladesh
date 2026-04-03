@@ -1,0 +1,266 @@
+.community-forum {
+  width: 100%;
+}
+
+.forum-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.forum-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.forum-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.filter-select {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-select:hover,
+.filter-select:focus {
+  border-color: #4a90a4;
+  outline: none;
+}
+
+/* Forum Posts */
+.forum-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.forum-post {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ecf0f1;
+  display: flex;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.forum-post:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  transform: translateX(4px);
+}
+
+.post-avatar {
+  flex-shrink: 0;
+}
+
+.avatar-icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #4a90a4 0%, #7cb9c3 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+.post-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-title {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin: 0;
+  font-weight: 600;
+}
+
+.post-category {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  background: #f0ad4e;
+  color: white;
+}
+
+.category-tips-advice {
+  background: #4a90a4;
+}
+
+.category-experiences {
+  background: #7cb9c3;
+}
+
+.category-questions {
+  background: #f0ad4e;
+}
+
+.category-events {
+  background: #6c5b7b;
+}
+
+.category-community {
+  background: #355c7d;
+}
+
+.post-author {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 0.5rem;
+}
+
+.post-body {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.post-stats {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.post-action-btn {
+  flex-shrink: 0;
+  align-self: center;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #7cb9c3;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-action-btn:hover {
+  color: #4a90a4;
+}
+
+/* Community Guidelines */
+.community-guidelines {
+  background: linear-gradient(135deg, rgba(74, 144, 164, 0.05) 0%, rgba(123, 185, 195, 0.05) 100%);
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 2rem auto 0;
+  width: 100%;
+}
+
+.community-guidelines h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.guidelines-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.guideline-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.guideline-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.guideline-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.guideline-card p {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .forum-container {
+    padding: 1rem;
+  }
+
+  .forum-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .forum-header .btn {
+    width: 100%;
+  }
+
+  .forum-controls {
+    flex-direction: column;
+  }
+
+  .filter-select {
+    width: 100%;
+  }
+
+  .forum-post {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .post-header {
+    flex-direction: column;
+  }
+
+  .post-action-btn {
+    align-self: flex-start;
+  }
+
+  .post-stats {
+    gap: 1rem;
+  }
+
+  .guidelines-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .community-guidelines {
+    padding: 2rem 1rem;
+  }
+}

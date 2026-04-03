@@ -1,0 +1,267 @@
+.admissions {
+  width: 100%;
+}
+
+.admissions-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* Admission Process */
+.admission-process {
+  margin-bottom: 4rem;
+}
+
+.admission-process h2 {
+  font-size: 2rem;
+  color: #1a3a52;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.step-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 2px solid #ecf0f1;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  border-color: #ff6b35;
+}
+
+.step-number {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #1e4d80 0%, #ff6b35 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.step-card h3 {
+  color: #1a3a52;
+  margin-bottom: 1rem;
+}
+
+.step-card p {
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Requirements */
+.requirements {
+  background: linear-gradient(135deg, rgba(30, 77, 128, 0.05) 0%, rgba(255, 107, 53, 0.05) 100%);
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 4rem;
+}
+
+.requirements h2 {
+  font-size: 2rem;
+  color: #1a3a52;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.requirements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.requirement-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #ff6b35;
+}
+
+.requirement-card h3 {
+  color: #1e4d80;
+  margin-bottom: 1rem;
+}
+
+.requirement-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.requirement-card ul li {
+  color: #555;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  position: relative;
+}
+
+.requirement-card ul li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #ff6b35;
+  font-weight: bold;
+}
+
+/* Application Form */
+.application-form-section {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 4rem;
+  border: 2px solid #ecf0f1;
+}
+
+.application-form-section h2 {
+  font-size: 2rem;
+  color: #1a3a52;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.application-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #1a3a52;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #ecf0f1;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #ff6b35;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.application-form .btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Important Dates */
+.important-dates {
+  margin-bottom: 4rem;
+}
+
+.important-dates h2 {
+  font-size: 2rem;
+  color: #1a3a52;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.dates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.date-item {
+  background: linear-gradient(135deg, #1e4d80 90%, #ff6b35 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.date-item h4 {
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.date-item p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Contact CTA */
+.contact-cta {
+  background: linear-gradient(135deg, #1e4d80 0%, #ff6b35 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.contact-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .admissions-container {
+    padding: 2rem 1rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .application-form-section {
+    padding: 1.5rem;
+  }
+
+  .dates-grid {
+    grid-template-columns: 1fr;
+  }
+}
